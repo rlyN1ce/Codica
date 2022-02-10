@@ -1,0 +1,18 @@
+{
+    "name": "src",
+    "version": "0.0.0",
+    "private": true,
+    "scripts": {
+        "start": "pm2 start ./bin/www --no-daemon --watch",
+        "recreate_db": "sed -e \"s/-- DROP /DROP /g\" ../documents/codica_db.sql | psql -h localhost -p 5432 -U postgres codica_db, dialect postgres"
+    },
+    "dependencies": {
+        "config": "^3.1.0",
+        "debug": "~2.6.9",
+        "express": "~4.16.1",
+        "pg": "^8.7.3",
+        "pg-hstore": "^2.3.4",
+        "sequelize": "^5.22.5",
+        "sharp": "^0.27.2"
+    }
+}

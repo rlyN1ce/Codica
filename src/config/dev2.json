@@ -1,0 +1,14 @@
+{
+    "database": {
+      "host": "192.168.20.115",
+      "port": 5432,
+      "user": "codica",
+      "password": "pass",
+      "database": "codica",
+      "dialect" : "postgres"
+    },
+    "files": {
+      "tmppath": "D:/temp/scr/tmp",
+      "storage": "D:/temp/scr/storage"
+    }
+  }
